@@ -1,0 +1,596 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+    font-family: system-ui;
+}
+/* layou布局-header */
+.header{
+    background-color:#353535;
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-between; 
+    padding: 25px; 
+}
+.header h1 a{
+    background-image: url(..//image/header_logo.png);
+    display: block;
+    width: 170px;
+    height: 36px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+.header h1 a:hover{
+    transform:scale(1.1,1.1); 
+}
+.headerlist{
+    display: flex;
+    align-items: center; 
+}
+.headerlist li a{
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 20px;  
+}
+.headerlist li a:hover{
+    color: #00cc99;
+    font-weight: bold;
+}
+
+
+/* lyayou布局-footer */
+.footer{
+    display: flex;
+    background: #4a4a4a;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+.footerlogo{
+    margin-left: 20px;
+}
+.footerlogo h4{
+    font-size: 15px;
+    color: #9b9b9b;
+    text-align: right;
+    font-weight: bold;    
+}
+.iconlist{
+    display: flex;
+}
+.iconlist a{
+    margin-left: 20px;
+}
+.iconlist a:hover{
+    opacity: 0.2;
+}
+
+/* 首頁 */
+/* 背景 */
+.header{
+    background-color: #353535;
+    opacity: 0.7;
+} 
+
+.banner{
+    background-image: url(..//image/banner.png);
+    background-repeat: no-repeat;
+    height: 560px;
+    width: 1024px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.banner p{
+    margin-top: 185px;
+    margin-left: 40px;
+    line-height: 1.8;
+    color: #00cc99;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.banner span{
+    color: white;
+}
+.bannerlink{
+    margin-top: 305px;
+    margin-left: 40px;
+}
+.bannerlink a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #00cc99;
+    padding: 15px 40px;
+    border-radius: 5px;
+    display: inline; 
+}
+.bannerlink a:hover{
+    background-color: white;
+    color: #00cc99;
+}
+
+
+/* 課程 */
+.course{
+    margin-top: 220px;           
+}
+.course h2{
+    color: #00cc99;
+    font-size: 36px;
+    margin-bottom: 35px;
+    margin-left: 37px;
+    font-weight: bold;
+}
+.course h2 span{
+    color:#9b9b9b ;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.courselist{
+    display: flex; 
+    margin-left: 43px;
+    margin-right:43px;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.courselist li{
+    width: 300px;
+    padding-bottom: 15px;
+    box-shadow: 0px 2px 6px  gray;
+    
+}
+.courselist img{
+    padding-top: 25px;
+}
+.courselist h3{
+    padding:15px 0px;
+    font-size: 20px;
+    color: #4a4a4a;   
+}
+.courselist p{
+    font-size: 16px;
+    color: #9b9b9b;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0px 15px;   
+}
+/* 課程比較 */
+.compare{
+    margin-left: 43px;
+    margin-bottom:60px ;
+}
+.compare h2{
+    color: #00cc99;
+    font-size: 36px;
+    margin-bottom: 35px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+.compare h2 span{
+    color:#9b9b9b ;
+    font-size: 20px;
+    margin-left: 20px;
+}
+/* 表單 */
+.homepage-table{
+    text-align: center;
+    width: 940px;
+    font-weight: bold;
+}
+.homepage-table th,.homepage-table td{
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.homepage-table tr th{
+    background: #ebebeb;
+    font-size: 16px;
+}
+.homepage-table tr td{
+    border-bottom: 1px solid #ebebeb;
+}
+.highlight{
+    color: #00cc99;
+}
+.giveback{
+    display: flex;
+    justify-content: space-between;
+    background:#ebebeb; 
+}
+.giveback h3{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 2;
+    margin:155px 0px 150px 45px;
+}
+.form-info{
+    display: flex;
+    flex-direction: column;
+    margin: 140px 40px 0px 0px;
+    width: 460px;
+}
+.form-info input{
+    margin-bottom: 25px;
+    font-size: 20px;
+    padding: 20px 0px 20px 25px;
+    border: none;
+    border-radius: 5px;
+}
+.givebackbutton{
+    font-size: 20px;
+    float: right;
+    margin-right: 43px;
+    padding:15px 45px ;
+    background-color: #00cc99;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+.givebackbutton:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+/* course */
+.coursebanner{
+    background-image: url(..//image/banner\ photo\ 2.png);
+    background-repeat: no-repeat;
+    height: 560px;
+    width: 1024px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+.coursebanner{
+    display: flex;
+}
+.aside{
+    margin-top: 190px;
+    margin-left: 40px;
+}
+.aside p{
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.aside p span{
+    color: #00cc99;
+    font-size: 24px;    
+}
+.course-banner-link{
+    margin-top: 265px;
+    margin-left: 40px;
+}
+.course-banner-link a{
+    color: white;
+    background: #00cc99;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.course-banner-link a:hover{
+    color: #00cc99;
+    background-color: white;
+}
+.imglogo{
+    display: flex;
+    margin-top: 115px;
+    margin-left: 200px;
+}
+.imglogo img{
+    margin-right: 35px;
+}
+.self-introduction{
+    margin-top: 260px;
+    margin-left: 200px;
+    display: flex;
+}
+.self-introduction h3{
+    font-size: 36px;
+    color: #00cc99;
+    margin-left: 40px;
+    margin-top: 70px;   
+}
+.self-introduction h3 span{
+    color: black;
+    display: block;
+    margin-top: 10px;   
+}
+.self-introduction ul{
+    margin-top: 70px;
+    font-weight: bold;
+}
+.self-introduction ul li{
+    list-style: disc;
+    color: #9b9b9b;
+    text-indent: 20px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+.self-introduction ul li::marker{
+    font-size: 10px;
+}
+.course-introduce,.outline{
+    margin: 60px 0px 60px 200px;
+}
+.course-introduce h2,.outline h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: #00cc99;
+    margin-bottom: 30px;
+    
+}
+.course-introduce h2 span,.outline h2 span{
+    font-size: 20px;
+    color: #9b9b9b;
+    margin-left: 20px;
+}
+.course-introduce ul{
+    font-weight: bold;
+    list-style:decimal;
+    line-height: 1.5;
+    margin-left: 17px;
+    width: 586px;
+}
+.course-introduce li{
+    padding-left: 16px;
+}
+.course-table{
+    text-align: left;
+}
+.course-table th{
+    background-color:#ebebeb;
+    width: 620px;
+    padding: 20px 0px 20px 40px;
+    font-weight: bold; 
+}
+.course-table td{
+    color: #9b9b9b;
+    padding: 20px 0px 20px 40px;
+    font-weight: bold;
+}
+.coursegiveback{
+    display: flex;
+    align-items: flex-end;
+    background:#ebebeb;
+}
+.coursegiveback h3{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 2; 
+    padding: 155px 65px 155px 200px;
+    
+}
+.coursegiveback a{
+    font-size: 20px;
+    background-color: #00cc99;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 160px;
+    padding:15px 45px ;
+    text-decoration: none;
+}
+.coursegiveback a:hover{
+    color: #00cc99;
+    background-color:white;
+}
+
+/* faq */
+.faqbanner{
+    background-image: url(..//image/banner\ photo\ 3.png);
+    background-repeat: no-repeat;
+    width: 1024px;
+    height: 560px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    text-align: center;
+   
+}
+.faqbanner p{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;  
+    margin-top: 180px;
+    margin-bottom: 50px;
+}
+.faqbanner p span{
+    font-size: 24px;
+    color: #00cc99;
+}
+.search-box{
+    margin-left: 205px;
+    margin-top: 245px;
+    width: 620px;
+    position: relative;
+    
+}
+.search-box input{
+    height: 55px;
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}   
+
+.search-btn{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    right: 0px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.question{
+    margin: 250px 0px 0px 130px;
+    width: 765px;
+}
+.question h2,.pay h2,.refund h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: #00cc99;
+    margin-bottom: 30px;
+}
+.question h2 span,.pay h2 span,.refund h2 span{
+    font-size: 20px;
+    color: #9b9b9b;
+    margin-left: 20px;
+}
+
+.question-title{
+    font-size: 20px;
+    color: #323223;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.answer{
+    color: #9b9b9b;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.answer a{
+    text-decoration: none;
+    color: #00cc99;
+}
+.pay,.refund{
+    margin: 60px 0px 0px 130px;
+    width: 765px;
+}
+.point{
+    line-height: 1.5;
+    margin-bottom: 35px;
+    margin-top: -35px;
+}
+.pay ul li{
+    list-style-type: decimal;
+}
+.refund ul li{
+    list-style-type: disc;
+}
+.point li,.otherpoint{
+    text-indent: 25px;
+    margin-left: 40px;
+    color: #9b9b9b;
+}
+.other{
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+.otherpoint{
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+.faqgiveback{
+    display: flex;
+    justify-content: space-between;
+    background:#ebebeb;
+}
+.faqgiveback h3{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 2;
+    margin:155px 0px 150px 45px;
+}
+.faq-form-info{
+    display: flex;
+    flex-direction: column;
+    margin: 140px 40px 0px 0px;
+    width: 460px;
+    color: #9b9b9b;
+}
+.faq-form-info input{
+    margin-bottom: 25px;
+    font-size: 20px;
+    padding: 20px 0px 20px 25px;
+    border: none;
+    border-radius: 5px;
+    color: #9b9b9b;
+}
+.faq-form-info textarea{
+    width: 435px;
+    height: 200px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-size: 20px;
+    padding: 20px 0px 20px 25px;
+    margin-bottom: 25px;
+}
+.faq-givebackbutton{
+    font-size: 20px;
+    float: right;
+    margin-right: 43px;
+    padding:15px 45px ;
+    background-color: #00cc99;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+.faq-givebackbutton:hover{
+    box-shadow: 0px 0px 10px gray;
+}
